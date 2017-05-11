@@ -5,14 +5,14 @@ Angular JSON Viewer component. JSON in HTML with syntax highlight like Chrome De
 ## Install
 
 ```
-npm install @fynd/angular-json-viewer --save
+npm install @gofynd/angular-json-viewer --save
 ```
 
 ## Usage
 import FyAngularJsonViewerModule to use in angular app. 
 
 ```js
-import { FyAngularJsonViewerModule } from '@fynd/angular-json-viewer';
+import { FyAngularJsonViewerModule } from '@gofynd/angular-json-viewer';
 
 @NgModule({
     ...,
