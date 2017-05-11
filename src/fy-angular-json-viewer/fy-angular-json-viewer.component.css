@@ -4,6 +4,7 @@
   word-wrap: break-word;
   font-style: italic;
   cursor: default;
+  margin-left: 12px;
 }
 
 .toggler {
@@ -11,7 +12,6 @@
   line-height: 1.2em;
   vertical-align: middle;
   margin-left: -12px;
-  margin-top: 3px;
 }
 
 .toggler::after {
