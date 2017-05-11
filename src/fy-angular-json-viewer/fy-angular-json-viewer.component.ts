@@ -21,14 +21,10 @@ export class FyJsonViewerComponent implements OnInit, OnChanges {
       return;
     }
 
-    this.initItems();
+    this.items = _.map(this.json, (v, k) => { return this.createItem(v, k); });
   }
 
   ngOnChanges(changes: SimpleChanges) {
-    this.initItems();
-  }
-
-  initItems(){
     this.items = _.map(this.json, (v, k) => { return this.createItem(v, k); });
   }
 
