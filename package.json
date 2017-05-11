@@ -1,8 +1,8 @@
 {
   "name": "@gofynd/angular-json-viewer",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Its angular json object viewer component.",
-  "main": "index.js",
+  "main": "index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "tslint -c tslint.json 'src/**/*.ts'"
@@ -28,9 +28,18 @@
     "@angular/compiler": "^4.1.1",
     "@angular/core": "^4.1.1",
     "@angular/platform-browser": "^4.1.1",
-    "lodash": "^4.17.4",
     "rxjs": "^5.4.0",
-    "zone.js": "^0.8.10"
+    "zone.js": "^0.8.10",
+    "lodash": "^4.17.4"
+  },
+  "peerDependencies": {
+    "@angular/common": "^4.1.1",
+    "@angular/compiler": "^4.1.1",
+    "@angular/core": "^4.1.1",
+    "@angular/platform-browser": "^4.1.1",
+    "rxjs": "^5.4.0",
+    "zone.js": "^0.8.10",
+    "lodash": "^4.17.4"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.64",
