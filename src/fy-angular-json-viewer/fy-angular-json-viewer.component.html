@@ -1,0 +1,15 @@
+<div class="fy-angular-json-viewer">
+  <div *ngFor="let it of items" class="item">
+    <div class="rep-obj" (click)="toggleOpend(it)">
+      <div class="toggler" *ngIf="it.isExpandable" [ngClass]="{'opened': it.isOpened}"></div>
+      <div>
+        <span class="item-key">{{it.key}}</span>
+        <span class="dot"> : </span>
+        <span [ngClass]="it.valueClasses">{{it.title}}</span>
+      </div>
+    </div>
+    <div *ngIf="it.isExpandable && it.isOpened" class="sub-child">
+      <fy-angular-json-viewer [json]="it.value"></fy-angular-json-viewer>
+    </div>
+  </div>
+</div>

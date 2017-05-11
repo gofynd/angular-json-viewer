@@ -1,0 +1,46 @@
+.rep-obj {
+  display: flex;
+  white-space: normal;
+  word-wrap: break-word;
+  font-style: italic;
+  cursor: default;
+}
+
+.toggler {
+  font-size: .8em;
+  line-height: 1.2em;
+  vertical-align: middle;
+  margin-left: -12px;
+  margin-top: 3px;
+}
+
+.toggler::after {
+  display: inline-block;
+  content: "►";
+  transition: transform 0.1s ease-in;
+}
+
+.toggler.opened {
+  transform: rotate(90deg);
+}
+
+.item-key {
+  color: #881391
+}
+
+.item-title {
+  color: black;
+}
+
+.item-title.obj-number,
+.item-title.obj-boolean {
+  color: #1c00cf;
+}
+
+.dot {
+  color: dimgray;
+}
+
+.sub-child {
+  margin-left: 10px;
+}
