@@ -11,7 +11,7 @@ export class FyJsonViewerComponent implements OnInit, OnChanges {
   @Input()
   json: Array<any> | Object | any;
 
-  private items: Array<any> = [];
+  items: Array<any> = [];
 
   constructor() {
   }
